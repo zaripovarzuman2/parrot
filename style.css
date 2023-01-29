@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #18233e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .qush {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.container .qush .qizil-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: rotateHair 3s infinite ease-in-out;
+}
+
+@keyframes rotateHair {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    15% {
+        transform: rotate(-360deg);
+    }
+
+    35% {
+        transform: rotate(-180deg);
+    }
+
+    65% {
+        transform: rotate(-180deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.container .qush .qizil {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: #A12A15;
+    border-radius: 0 125px 125px 0;
+}
+
+.container .qush .yuz {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50% -50%);
+    z-index: 1;
+}
+
+.container .qush .yuz .oq-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: rotateWhite 3s infinite ease-in-out;
+}
+
+@keyframes rotateWhite {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(-180deg);
+    }
+
+    65% {
+        transform: rotate(-180deg);
+    }
+
+    85% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.container .qush .yuz .oq-container .oq {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    border-radius: 0 87.5px 87.5px 0;
+    background-color: white;
+}
+
+
+.container .qush .yuz .soya-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    animation: rotateSoya 3s infinite ease-in-out;
+}
+
+@keyframes rotateSoya {
+    15% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(90deg);
+    }
+
+    65% {
+        transform: rotate(90deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
+.container .qush .yuz .soya-container .soya {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 87.5px 0;
+}
+
+.container .qush .yuz .div9 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation: anim 3s infinite ease-in-out;
+}
+
+@keyframes anim {
+    15% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(90deg);
+    }
+
+    65% {
+        transform: rotate(90deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
+.container .qush .yuz .div9 .burun {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background-color: #f7ce42;
+    border-radius: 87.5px 0 0 0;
+}
+
+.container .qush .yuz .div11 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: example 3s infinite ease-in-out;
+}
+
+
+@keyframes example {
+    15% {
+        transform: rotate(0deg);
+    }
+
+    35% {
+        transform: rotate(-90deg);
+    }
+
+    65% {
+        transform: rotate(-90deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+}
+
+.container .qush .yuz .div11 .ogiz {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    top: 50%;
+    left: 25%;
+    background-color: orange;
+    z-index: 2;
+    border-radius: 0 0 0 43.25px;
+}
+
+.container .qush .yuz .koz {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    bottom: 51%;
+    left: 51%;
+    background-color: #18233e;
+    z-index: 2;
+    border-radius: 50%;
+    animation: eye 3s infinite ease-in-out;
+}
+
+@keyframes eye {
+    15% {
+        left: 51%;
+        transform: translate(0px);
+    }
+
+    35% {
+        left: 49%;
+        transform: translate(-100%);
+    }
+
+    65% {
+        left: 49%;
+        transform: translate(-100%);
+    }
+
+    85% {
+        left: 51%;
+        transform: translate(0px);
+    }
+}
